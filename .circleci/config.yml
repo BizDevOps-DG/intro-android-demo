@@ -31,3 +31,5 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}      
       # run tests!
       - run: ./gradlew lint test
+      - store_artifacts:
+          prefix: app/build
