@@ -32,4 +32,4 @@ jobs:
       # run tests!
       - run: ./gradlew lint test
       - store_artifacts:
-          path: /repo/app/build
+          path: /repo/build
