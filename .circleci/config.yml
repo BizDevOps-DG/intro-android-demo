@@ -30,6 +30,6 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}      
       # run tests!
-      - run: ./gradlew lint test
+      - run: ./gradlew assembleDebug
       - store_artifacts:
           path: /repo
